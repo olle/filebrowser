@@ -1,0 +1,62 @@
+.node {
+	padding: 0;
+	margin: 0;
+	cursor: pointer;
+}
+.node .node {
+	margin-left: 24px;
+}
+.folder, .file {
+	list-style: none;
+	padding: 1px;
+	line-height: 18px;
+}
+.folder span, .file span {
+	display: block;
+	line-height: 16px;	
+	overflow: hidden;
+	list-style: none;
+	padding-left: 20px;
+}
+.folder > span {
+	background: url(../img/jquery.filebrowser.png) 0px -16px no-repeat;	
+}
+.folder.open > span {
+	background: url(../img/jquery.filebrowser.png) 0px -32px no-repeat;	
+}
+.file > span {
+	background: url(../img/jquery.filebrowser.png) 0px 0px no-repeat;
+}
+.file.png > span,
+.file.jpg > span,
+.file.jpeg > span,
+.file.gif > span {
+	background: url(../img/jquery.filebrowser.png) 0px -48px no-repeat;
+}
+.file.txt > span {
+	background: url(../img/jquery.filebrowser.png) 0px -64px no-repeat;
+}
+.file.html > span,
+.file.htm > span {
+	background: url(../img/jquery.filebrowser.png) 0px -80px no-repeat;
+}
+.file.pdf > span {
+	background: url(../img/jquery.filebrowser.png) 0px -96px no-repeat;
+}
+.file.doc > span {
+	background: url(../img/jquery.filebrowser.png) 0px -112px no-repeat;
+}
+.file.mp3 > span,
+.file.acc > span,
+.file.aiff > span,
+.file.aif > span,
+.file.wav > span {
+	background: url(../img/jquery.filebrowser.png) 0px -128px no-repeat;
+}
+.file.avi > span,
+.file.mp4 > span {
+	background: url(../img/jquery.filebrowser.png) 0px -144px no-repeat;
+}
+.folder.selected > span, .file.selected > span {
+	background-color: #ddf;
+}
